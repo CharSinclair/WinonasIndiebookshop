@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+/*to start link you rcss doc to html doc. then press "@" and enter charset data
+
+Each of these chunks makes edits to certain elements.
+
+/*HEXCODES: #F2EDEB- White Creme
+            #EDE1D1- Fox Creme
+            #FAB01A- Yellow
+            #227053- Logo green
+            #A64325- Burnt orange
+            #E06026- Orange
+            #1B331D- Drk Green
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+/*serif*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*sans-serif*/
+
+
+/*Universal Selector*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", sans-serif
+}
+
+/* Nav*/ 
+
+.navbar {
+    Background-color:#1B331D;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.orgname{
+    color: #F2EDEB;
+}
+
+.nav-container{ 
+    
+    width: 100%;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    align-items: baseline;
+}
+
+.nav {
+    padding: 25px;
+    margin: 0;
+    text-align: right;
+    }
+
+
+
+/* Link Styles*/
+
+a:link, a:visited {
+    color: #E06026;
+    
+}
+a:focus, a:hover, a:active {
+    color:#FAB01A;
+}
+
+a{ 
+    text-decoration: none;
+
+    
+
+/* new link appearance*/ 
+    padding: 5px; 
+}
+
+
+/*ABOUT PAGE STYLES*/
+
+.about{
+    background: #F6F3ED;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #1B331D;
+    width: 1300px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.youtubevideo{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.container{
+    
+ background: #EDE1D1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #1B331D;
+    width: 1559px;
+    display: flex;
+    flex-direction: row;
+    text-align: center center center;
+    justify-content: center;
+}
+    
+        
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+/* Grid layout*/
+#container { 
+    display: grid;
+    grid-template-rows: auto auto 10px;
+    grid-template-columns: minmax(25px) 16px;
+    grid-template-areas: 
+    
+            "banner banner"
+            "main hours"
+            "footer footer"
+}
+
+
+
+main{
+    
+    grid-area: main;
+    grid-template-columns: auto auto auto;
+}
+
+article{ 
+    grid-area: hours;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+
+/*NEED HELP PAGE & Get Involved Page*/
+section{ 
+    
+    background: #EDE1D1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #1B331D;
+    width: 1559px;
+    display: flex;
+    flex-direction: row;
+    text-align: center center;
+    justify-content: center;
+}
+
+
+
+
+.btns {
+background: 
+    
+}
+ 
+
+/*--------------------------------------------------------------------------------*/
+/* Body/Main*/
+
+ /* body syles */
+body{
+    font-family: Roboto, sans-serif;
+    background-color: white;
+    margin: 0;         
+    }
+
+h1 {
+    text-transform: uppercase;
+    text-align: Center;
+    color: #1B331D;
+    border-left: 5px;
+    padding-left:20px;
+    margin-top: 2.5%;
+}
+
+h2 {
+    color: #1B331D;
+    text-align: Center;
+    border-left: 5px;
+    padding-left: 10px;
+    margin-top: 2.5%;
+}
+
+h3 {
+    color: #A64325;
+    text-align: left;
+    border-left: 5px;
+    padding-left: 10px;
+    margin-top: 2.5%;
+}
+
+p{ 
+    
+ padding-left: 10px;
+   
+}
+
+ul{
+     padding-left: 10px;
+
+}
+
+
+/*DonateLinks*/
+
+.donatelinks{
+    text-align: center;
+    
+}
+
+
+/* .btns
+rounded radius
+text
+etc 
+
+bt place image tag within link creates image button 
+*/
+
+.button {    
+    background-color: #EDE1D1;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    display: grid;
+    flex-direction: row;
+    border: 2px #A64325;
+   
+}
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #227053; /* Logo Green */
+  color: white;
+}
+
+.donatebutton{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-size: 32px;
+}
+
+
+
+
+/*FlexBox*/
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 200px;
+  
+    
+}
+
+
+.readings{
+    justify-content: center center center;
+    flex-direction: row;
+    justify-content: space-evenly
+    
+}
+
+
+
+/*footer*/
+
+footer{
+    
+    background-color: #1B331D;
+    padding: 30px;
+    color: #F2EDEB;
+}
+footer .h4{
+    justify-content: center;
+    
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+.footer-socials{ 
+    display: flex;
+    column-gap: 10px;
+    grid-template-columns:left;
+    padding: 30px;
+}
+
+.footer-copywrite{
+    
+    color: #F2EDEB;
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+    text-justify: auto;
+}
+
+.footer-nav{
+    color: #F2EDEB;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px; 
+    padding: 5px;
+}
